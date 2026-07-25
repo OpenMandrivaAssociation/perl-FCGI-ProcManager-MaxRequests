@@ -2,14 +2,14 @@
 %define upstream_version 0.02
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	7
 
 Summary:	Restrict max number of requests by each child
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/FCGI/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/FCGI-ProcManager-MaxRequests
+Source0:	https://cpan.metacpan.org/authors/id/V/VO/VOVKASM/FCGI-ProcManager-MaxRequests-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
