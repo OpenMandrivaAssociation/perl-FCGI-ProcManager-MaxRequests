@@ -1,15 +1,13 @@
 %define upstream_name    FCGI-ProcManager-MaxRequests
-%define upstream_version 0.02
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	7
+Version:	0.02
+Release:	8
 
 Summary:	Restrict max number of requests by each child
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/FCGI-ProcManager-MaxRequests
-Source0:	https://cpan.metacpan.org/authors/id/V/VO/VOVKASM/FCGI-ProcManager-MaxRequests-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/V/VO/VOVKASM/FCGI-ProcManager-MaxRequests-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -30,7 +28,7 @@ environment variable, max_requests - constructor argument and max_requests
 accessor.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
